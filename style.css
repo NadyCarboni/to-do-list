@@ -1,0 +1,170 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+/* ---------Estilos gerais--------- */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+*::selection {
+    color: #fff;
+    background-color: #E0F5B9;
+}
+
+body {
+    display: flex;
+   justify-content: center;
+}
+
+
+
+
+/*---------Container de fora -> que contém tanto os containers para digitar a tarefa quanto o de riscar--------- */
+.big-container {
+    padding: 20px;
+    margin:  0 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    color: #666;
+}
+
+
+
+/*---------Container digitar tarefa--------- */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;  
+}
+/* Título */
+.container .tarefa-cabecalho h1 {
+    font-family: 'Lato', sans-serif;
+    color: #FF8080;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+}
+
+.container .tarefa-cabecalho h1 .t {color: #FF8080; }
+.container .tarefa-cabecalho h1 .o {color: #FFBA92; }
+.container .tarefa-cabecalho h1 .d {color: #E0F5B9; }
+.container .tarefa-cabecalho h1 .o2 {color: #C6F1D6;}
+
+/* Campo tarefas  */
+.container .tarefa-campo {
+    display: block;
+    width: 100%;
+}
+
+.container .tarefa-campo input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 3px;
+    margin: 5px 0;
+    border: 1px #ddd solid;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.container .tarefa-campo input:focus {
+    outline: #FFBA92;
+   border: 2px solid #FFBA92;
+}
+
+::-webkit-input-placeholder {
+   color: #888;
+   
+}
+
+
+
+
+.container .tarefa-campo a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #FF8080;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    margin: 20px 0;
+    transition: 0.5s;
+    
+}
+
+.container .tarefa-campo a:hover {
+    background-color: #FFBA92;
+}
+
+
+/* --------- Tarefas --------- */
+.container-tarefas {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+
+}
+
+.container-tarefas .to-do {
+   border: 1px solid #ddd;
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem;
+   border-radius: 3px;
+   margin: 0.4rem 0;
+
+}
+
+
+.container-tarefas h1 {
+    font-family: 'Lato', sans-serif;
+    color: #FF8080;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.container-tarefas h1 .t {color: #FF8080; }
+.container-tarefas h1 .a {color: #FFBA92; }
+.container-tarefas h1 .r {color: #E0F5B9; }
+.container-tarefas h1 .e {color: #C6F1D6;}
+.container-tarefas h1 .f {color: #FF8080; }
+.container-tarefas h1 .a2 {color: #FFBA92; }
+.container-tarefas h1 .s {color: #E0F5B9; }
+.container-tarefas h1 .dot-dot {color: #C6F1D6; }
+.container-tarefas .to-do p {
+    margin: -2px 5px;
+ 
+ }
+
+.container-tarefas .to-do .title {
+    display: flex;
+}
+
+.container-tarefas .to-do a {
+    text-decoration: none;
+    color: #C6F1D6;
+    font-weight: 700;
+}
+
+.container-tarefas .to-do .title input[type=checkbox]:checked {
+    background-color: #C6F1D6;
+}
+
+@media (max-width:600px) {
+    .big-container {
+        margin: 0 1rem;
+    }
+}
